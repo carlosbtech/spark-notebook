@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  spark-notebook:
+    build: .
+    ports:
+      - 8888:8888
+    volumes:
+      - ${NOTEBOOKS_PATH}:/home/jovyan/work/notebooks/
