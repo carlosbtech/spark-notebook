@@ -2,6 +2,7 @@ version: "3.8"
 services:
   spark-notebook:
     build: .
+    command: start.sh jupyter lab --LabApp.token=''
     ports:
       - 8888:8888
     volumes:
